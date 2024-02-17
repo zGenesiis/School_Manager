@@ -22,7 +22,7 @@ Here you will see what you can do with this code:
 > _Disclaimer: (English version of the code will be lauched in fututre commits)._
 > _In case you just want to see it working, You can use the [default data]()._
 
-First of all, you need to create at least a [school](), a [class](), a [teacher]() and a [student]()
+First of all, you need to create at least a [school](./School), a [grade](./Grade), a [teacher](./Teacher) and a [student](./Student)
 to start.
 
 All starts with the teacher making tests, that are automatically stored on the class object.
