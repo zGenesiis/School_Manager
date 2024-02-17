@@ -4,4 +4,6 @@ professor de outra matéria||Você é um professor de outra matéria,-_-por favo
 
 prova não existente||Esta prova não existe. Busque pelo nome certo-_-e tente novamente.\/
 
-prova já feita||Você já fez essa prova, portanto-_-não pode fazer outra.
+prova já feita||Você já fez essa prova, portanto-_-não pode fazer outra.\/
+
+professor errado||Parece que você está tentando conrrigir uma prova de outro professor.

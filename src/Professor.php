@@ -14,6 +14,17 @@ class Professor
     private array $minhas_provas = [];
     private array $provas_dos_alunos = [];
     
+    protected function correcao(Prova $prova): int
+    {
+        return match($prova->conteudo){
+            "muito mal" => 2,
+            "mal" => 5,
+            "mediano" => 7,
+            "bem" => 9,
+            "muito bem" => 10
+        };
+    }
+    
     public function montarProva(Turma $turma, string $titulo)
     {
         $nova_prova = new Prova($this->materia_lecionada, $this->nome, $titulo);
@@ -37,23 +48,25 @@ class Professor
     }
 
 
-    public function corrigirProva(Prova $prova): bool
-    {
-        if ($prova->professor !== $this->nome){
-            enviarMensagem("professor de outra matéria");
-            return false;
-        }   
-    
-        $nota = match($prova->conteudo){
-            "muito mal" => 2,
-            "mal" => 5,
-            "mediano" => 7,
-            "bom" => 9,
-            "muito bom" => 10,
-        };
+    public function corrigirProvas(string $titulo_da_prova): void
+    {   
+        
+        if(! count($this->provas_dos_alunos) === $this->turma->quantidade_alunos){
+            enviarMensagem("falta alunos responderem");
+            return;
+        }
 
-        $prova->marcarNota($nota);
-        return true;  
+        foreach($this->provas_dos_alunos as $prova_de_aluno){
+            $nota = correcao($prova_de_aluno); //TODO   AJEITAR ISSO PARA SEM QUATRO NÍVEIS DE IDENTAÇÃO
+            $prova_de_aluno->marcarNota($nota);
+        }
+
+
     }
 
+
+    public function verNotaDeAluno(string $titulo_da_Prova, Aluno $aluno)
+    {
+
+    }
 }

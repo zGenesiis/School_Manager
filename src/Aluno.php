@@ -7,22 +7,28 @@ class Aluno
         public readonly Turma $turma,
         public readonly Escola $escola)
         {
-            $this->turma->novoAluno($this);
+            $this->turma->adicionarAluno($this);
         }
     
-    protected array $provas_do_aluno = [];
+    protected array $minhas_provas = [];
+    
 
+    //* Setter de $prova pelo $professor 
     public function receberProva(Prova $prova)
     {
-        $this->provas_do_aluno[$prova->titulo] = $prova;
+        $this->minhas_provas[$prova->titulo] = $prova;
     }
     
-    public function responderProva(string $prova, string $resposta)
-    {   
+    public function responderProva(string $titulo_da_prova, string $resposta)
+    {
+        $prova_para_responder = $this->minhas_provas[$titulo_da_prova];
+        $prova_para_responder->marcarResposta($resposta);
+        
     }
 
 
     public function verMinhaNota(Prova $prova)
     {
+        
     } 
 }

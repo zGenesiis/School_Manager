@@ -24,8 +24,18 @@ class Prova
 
 
     //* Setter de $nota pelo professor
-    public function marcarNota(int $avaliacao): void
+    public function marcarNota(int $avaliacao, Professor $professor): void
     {
+        if(! $this->professor === $professor->nome){
+            enviarMensagem("professor errado");
+            return;
+        }
         $this->nota = $avaliacao;
+    }
+
+
+    public function verNota()
+    {
+        
     }
 }
