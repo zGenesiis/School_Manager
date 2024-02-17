@@ -28,5 +28,4 @@ class Prova
     {
         $this->nota = $avaliacao;
     }
-
 }

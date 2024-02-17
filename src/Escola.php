@@ -23,5 +23,4 @@ class Escola
     public function pegarNotasPorTurma()
     {
     }
-
 }

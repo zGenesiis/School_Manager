@@ -18,13 +18,11 @@ class Aluno
     }
     
     public function responderProva(string $prova, string $resposta)
-    {
-    
+    {   
     }
 
 
     public function verMinhaNota(Prova $prova)
     {
-
     } 
 }

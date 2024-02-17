@@ -22,5 +22,3 @@ $Sexto_Ano = new Turma("Sexto Ano");
 $Professor_Mario = new Professor("Mário", "Inglês", $Sexto_Ano, $Escola_SESI);
 
 $Aluno_Lucivalda = new Aluno( "Lucivalda", $Professor_Mario, $Sexto_Ano, $Escola_SESI);
-
-var_dump(Turma::$alunos_da_turma["Lucivalda"]);
