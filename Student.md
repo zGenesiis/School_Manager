@@ -6,18 +6,19 @@ When created, you need to give the following attributes:
 + Teacher;
 + Name.
 
-### Example
-
-```
-$Maggie = new Student($Ridgemont, $classA, $Mr_Garrison, "Maggie");
-```
-
 Any student can do the following actions:
-+ Answer a test on your collection of tests given from your teacher;
-+ Give the answered test to your teaceher;
++ Answer a test on your list and send automatically to your teacher;
 + See your own result on the test.
 > [!NOTE]
 > A student can only see your own nresult.
 
 ## Documentation
-`$student = new Student(School $school, Grade $grade, Teacher $teacher, string $string);`
+### To instance a new student
+```$student = new Student(School $school, Grade $grade, Teacher $teacher, string $string);```
+
+### To Answer a test
+``` $student->answer_test(Test $test, string $answer); ```
+
+### To see the result of a test
+``` $student->see_result(Test $test); ```  
+
