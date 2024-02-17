@@ -23,13 +23,13 @@ And every teacher can:
 > your test.
 
 ## Documentation
-### To instance a new teacher:
+### To instance a new teacher
 ``` $newTeacher = new Teacher(string $name, string $subject, Grade $grade, School $school); ```
 
-### To make a new model test:
+### To make a new model test
 ``` $teacher->make_model_test(Grade $grade, string $title); ```
 
-### To deliver a test to your own grade:
+### To deliver a test to your own grade
 
 ``` $teacher->deliver_test(); ```
 
