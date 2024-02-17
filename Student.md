@@ -14,7 +14,7 @@ Any student can do the following actions:
 
 ## Documentation
 ### To instance a new student
-```$student = new Student(School $school, Grade $grade, Teacher $teacher, string $string);```
+```$student = new Student(School $school, Grade $grade, Teacher $teacher, string $name);```
 
 ### To Answer a test
 ``` $student->answer_test(Test $test, string $answer); ```
