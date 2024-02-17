@@ -22,7 +22,7 @@ Here you will see what you can do with this code:
 > _Disclaimer: (English version of the code will be lauched in fututre commits)._
 > _In case you just want to see it working, You can use the [default data]()._
 
-First of all, you need to create at least a [school](./README/School.md), a [grade](./README/Grade.md), a [teacher](./README/Teacher.md) and a [student](./README/Student.md)
+First of all, you need to create at least a [school](./School.md), a [grade](./Grade.md), a [teacher](./Teacher.md) and a [student](./Student.md)
 to start.
 
 All starts with the teacher making tests, that are automatically stored on the class object.
