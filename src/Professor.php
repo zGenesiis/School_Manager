@@ -53,8 +53,6 @@ class Professor
         };
 
         $prova->marcarNota($nota);
-        return true;
-    
+        return true;  
     }
-
 }

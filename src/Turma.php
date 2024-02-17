@@ -20,8 +20,4 @@ class Turma
     {
         Turma::$alunos_da_turma[$aluno->nome] = $aluno;
     }
-
-    
-
-
 }
