@@ -12,7 +12,8 @@ And every teacher can:
 + Deliver test copies to your students so they can aswer them;
 + Receive answered tests from your students and keep it;
 + Revise answered tests*;
-+ Send the asnwered tests to the grade's database.
++ Send the asnwered tests to the grade's database;
++ See the test's results of any student, even if he/she is not of your student.
 
 > [!IMPORTANT]
 > The teacher can only revise test that he have made.
