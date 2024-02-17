@@ -16,7 +16,8 @@ Any student can do the following actions:
 + Answer a test on your collection of tests given from your teacher;
 + Give the answered test to your teaceher;
 + See your own result on the test.
-> Disclaimer: A student can only see your own result.
+> [!NOTE]
+> A student can only see your own nresult.
 
 ## Documentation
 `$student = new Student(School $school, Grade $grade, Teacher $teacher, string $string);`
