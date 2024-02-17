@@ -1,0 +1,7 @@
+acesso de nota negado||Você não pode acessar esta nota,-_-apenas o dono da prova e o professor pode vê-la.\/
+
+professor de outra matéria||Você é um professor de outra matéria,-_-por favor deixe com o professor responsável.\/
+
+prova não existente||Esta prova não existe. Busque pelo nome certo-_-e tente novamente.\/
+
+prova já feita||Você já fez essa prova, portanto-_-não pode fazer outra.\/
